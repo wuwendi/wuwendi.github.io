@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+    <title>index</title>
+    <script>
+        (function(win,doc){
+            win.addEventListener('resize',change,false);
+            change();
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+        })(window,document);
+    </script>
+    <style>
+    	img{
+    		vertical-align: top;
+    	}
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family:Microft Yahei;
+        }
+        .clearfix:after{
+            display:block;
+            content: '';
+            clear: both;
+        }
+        header{
+            width: 100%;
+            height:3rem;
+            background: #344a61;
+        }
+        header ul{
+            width: 100%;
+            height:3rem;
+            overflow: hidden;
+        }
+        header ul li{
+            float: left;
+        }
+        header ul li:nth-child(1){
+            border-right: 2px solid #455b72;
+            box-sizing: border-box;
+            width:3rem;
+            height: 100%;
+            background:url("img/three.png") no-repeat center center;
+        }
+        header ul li:nth-child(2){
+            width: 9.8rem;
+            height: 100%;
+            font-size: 1rem;
+            line-height:3rem;
+            color: #fff;
+            text-align: center;
+        }
+        header ul li:nth-child(3){
+            border-left: 2px solid #455b72;
+            box-sizing: border-box;
+            width:3rem;
+            height: 100%;
+            background:url("img/email.png") no-repeat center center;
+        }
+        section{
+            width:14rem;
+            margin: 0 auto;
+        }
+        .homepage{
+            width: 100%;
+            height: 2rem;
+            border-bottom:2px solid #e7e7e7;
+            font-size: 0.65rem;
+            line-height:1.8rem;
+            color: #dcdcdc;
+        }
+        .pc{
+            margin-top: 1rem;
+             margin-bottom: 1.2rem;
+        }
+        .pc img{
+            width:14rem;
+            height:9.25rem;
+        }
+        h3{
+            font-size: 0.9rem;
+           
+        }
+        .well p{
+            margin-top: 1rem;
+            font-size: 0.7rem;
+            color: #686868;
+            line-height:1rem;
+            margin-bottom: 1rem;
+        }
+        .easy{
+            width: 100%;
+            border-top: 2px solid #e7e7e7;
+            border-bottom: 2px solid #e7e7e7;
+            margin-bottom: 1rem;
+        }
+		.easy ul{
+			margin-top: 1rem;
+		}
+		.easy ul li{
+			margin-bottom: 1rem;
+		}
+		.easy ul li img{
+			width: 4rem;
+			height: 4rem;
+			float: left;
+		}
+		.easy ul li aside{
+			float: left;
+			margin-left: 1rem;
+		}
+		.easy ul li aside h3{
+			font-size: 0.9rem;
+		}
+		.easy ul li aside p{
+			width: 9rem;
+			font-size: 0.6rem;
+			color: #888888;
+		}
+		.some h3{
+			 font-size: 0.9rem;
+			 margin-bottom: 1rem;
+		}
+		.some p{
+			font-size: 0.7rem;
+			color: #888888;
+			margin-bottom: 1rem;
+		}
+		.some .imgbox{
+			 border-bottom: 2px solid #e7e7e7;
+		}
+		.some .imgbox img{
+			float: left;
+			width: 4rem;
+			height: 4rem;
+			margin-bottom: 1rem;
+			margin-right: 1rem;
+		}
+		.some .imgbox img:nth-child(3){
+			margin:0;
+		}
+		.some .imgbox img:nth-child(6){
+			margin:0;
+		}
+		.tes{
+			 border-bottom: 2px solid #e7e7e7;
+			 margin-bottom: 1rem;
+		}
+		.tes p{
+			margin-top: 1rem;
+            font-size: 0.7rem;
+            color: #686868;
+            line-height:1rem;
+            margin-bottom: 1rem;
+		}
+		.tes img{
+			width: 4rem;
+			height: 4rem;
+			float: left;
+			margin-right: 1rem;
+		}
+		.tes .per{
+			margin-bottom: 1rem;
+		}
+		.tes .per p{
+			width: 9rem;
+			font-size: 0.6rem;
+			color: #888888;
+			float: left;
+			margin: 0;
+		}
+		.tes .per span{
+			float: right;
+			font-size: 0.6rem;
+			color: #6c6c6c;
+			font-style: italic;
+		}
+		.get h3{
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+		.get p{
+			font-size: 0.55rem;
+			color: #888888;
+			text-align: center;
+			
+		}
+		.get .imgt{
+			margin:1rem 1rem;
+		}
+		.get .imgt img{
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-left: 1rem;
+		}
+		.get{
+			 border-bottom: 2px solid #e7e7e7;
+			 margin-bottom: 1rem;
+		}
+		.copy p{
+			font-size: 0.75rem;
+			color: #888888;
+			text-align: center;
+			line-height: 1rem;
+		}
+		.copy p:nth-child(2){
+			 margin-bottom: 1rem;
+		}
+		.copy{
+			border-bottom: 2px solid #e7e7e7;
+		}
+		footer{
+			width: 100%;
+			height: 3rem;
+			background: #000;
+		}
+		footer ul li{
+			width: 1rem;
+			height: 1rem;
+			margin: 0.5rem;
+			float: left;
+		}
+		footer ul li img{
+			width: 1rem;
+			height: 1rem;
+		}
+		footer ul li:nth-child(3){
+			width: 1rem;
+			height: 1rem;
+			background: #2780b8;
+		}
+		footer ul li:nth-child(4){
+			background: #25ad61;
+		}
+		footer ul li:nth-child(5){
+			background: #e67d21;
+		}
+		footer ul li:nth-child(6){
+			background: #8d44ad;
+		}
+		footer ul li:nth-child(7){
+			background: #c13929;
+		}
+		footer ul li:nth-child(8){
+			background: #828a8c;
+		}
+		footer p{
+			color:#7c7c7c;
+			text-align: center;
+			font-size: 0.65px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="clearfix">
+            <li></li>
+            <li>HEXNGONE</li>
+            <li></li>
+        </ul>
+    </header>
+    <section>
+        <div class="homepage">HOMEPAGE</div>
+        <div class="pc"><img src="img/pc.png" alt=""></div>
+        <article class="well">
+            <h3>WELL,HELLO THERE!</h3>
+            <p>Honeycomb provides a unique design and a flat interface to make it stand out from the crowd!The nav is swipable,by dragging any part of the page to the right!Check it out yourself!</p>
+        </article>
+        <div class="easy">
+			<ul>
+				<li class="top clearfix">
+					<img src="img/pic1.png" alt="">
+					<aside>
+						<h3>EASY TO USE!</h3>
+						<p>There are no point to complicate your lifr!We build products that ate easy to use and customize!</p>
+					</aside>
+				</li>
+				<li class="bottom clearfix">
+					<img src="img/pic2.png" alt="">
+					<aside>
+						<h3>EASY TO USE!</h3>
+						<p>There are no point to complicate your lifr!We build products that ate easy to use and customize!</p>
+					</aside>
+				</li>
+			</ul>
+        </div>
+        <div class="some">
+        	<h3>SOME OF OUR WORKS!</h3>
+        	<p>A gallery is essential in any template,so,if it's a mobile device,why not have a touch one!</p>
+        	<div class="imgbox">
+        		<img src="img/p1.png">
+        		<img src="img/p2.png">
+        		<img src="img/p3.png" alt="">
+        		<img src="img/p4.png" alt="">
+        		<img src="img/p5.png" alt="">
+        		<img src="img/p6.png" alt="">
+        	</div>
+        </div>
+        <div class="tes">
+        	<h3>TESTIMONIALS</h3>
+        	<p>
+        		The testimonial slider is automatic, and it's drag enabled!Pretty awesome stuff!And it handles all kinds of variations!
+        	</p>
+        	<div class="per clearfix">
+        		<img src="img/per.png">
+        		<p>Patience is key when building for quality and speed!We take care of every possible aspect!</p>
+        		<span>John Dose-Annoynmus Buyer</span>
+        	</div>
+        </div>
+        <div class="get">
+        	<h3>GET SOCIAL WITH US!</h3>
+        	<p>Get news,updates,and just hang around for a chit chat or two on our social networks!</p>
+        	<div class="imgt">
+        		<img src="img/f.png">
+        		<img src="img/g.png">
+        		<img src="img/gi.png">
+        	</div>
+        </div>
+        <div class="copy">
+        	<p>COPYRIGHT 2013</p>
+        	<p>ALL RIGHTS RESERVED</p>
+        </div>
+    </section>
+    <footer>
+    	<ul class="clearfix">
+    		<li><img src="img/g1.png"></li>
+    		<li><img src="img/g2.png"></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	</ul>
+    	<p>TAP THE ICONS TO CHANGE THE MENU STYLE</p>
+    </footer>
+</body>
+</html>
